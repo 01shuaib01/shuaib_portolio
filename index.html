@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohd Shuaib – AI Researcher & Assistant Professor</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Source+Serif+4:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#050507;--card:#0e1118;--ink:#f4f6fb;--mute:#9aa3b8;--line:#1c2232;--h1:#1a8fe3;--h2:#ff2e93;--h3:#ff8cc6;--accent:#4db8ff;--glow:.35;
+--d:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;--b:"Source Serif 4",Georgia,serif;color-scheme:dark}
+:root[data-theme="light"]{--bg:#eef0f6;--card:#fff;--ink:#101729;--mute:#586177;--line:#d7dbe8;--h1:#0a73c4;--h2:#e0157a;--h3:#ff6fb0;--accent:#0a73c4;--glow:0;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#050507;--card:#0e1118;--ink:#f4f6fb;--mute:#9aa3b8;--line:#1c2232;--h1:#1a8fe3;--h2:#ff2e93;--h3:#ff8cc6;--accent:#4db8ff;--glow:.35;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#050507;--card:#0e1118;--ink:#f4f6fb;--mute:#9aa3b8;--line:#1c2232;--h1:#1a8fe3;--h2:#ff2e93;--h3:#ff8cc6;--accent:#4db8ff;--glow:.35;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.1rem/1.6 var(--b);-webkit-font-smoothing:antialiased}
+a{color:inherit}:focus-visible{outline:3px solid var(--h2);outline-offset:3px;border-radius:6px}
+.w{max-width:1120px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;gap:20px;align-items:center;height:58px;overflow-x:auto;white-space:nowrap}
+nav b{font:800 1.1rem var(--d);margin-right:auto}
+nav a{font:600 .92rem var(--d);text-decoration:none;color:var(--mute);padding:4px 0}
+nav a.on{color:var(--ink);box-shadow:0 3px 0 var(--h2)}
+.tt,.chips button{font:600 .92rem var(--d);border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 15px;cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.hero{position:relative;min-height:calc(100svh - 58px);display:flex;align-items:flex-end;overflow:hidden}
+#heat{position:absolute;inset:0;width:100%;height:100%}
+.hero .w{position:relative;width:100%;padding-bottom:48px;padding-top:90px;pointer-events:none}
+.hero .w>*{pointer-events:auto}
+.pill{display:inline-flex;gap:8px;align-items:center;font:600 .9rem var(--d);padding:7px 14px;border:1.5px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--card) 80%,transparent);margin-bottom:22px}
+.pill i{width:9px;height:9px;border-radius:50%;background:#2fbf71;box-shadow:0 0 0 4px rgba(47,191,113,.25)}
+h1{font:800 clamp(4rem,19vw,14rem)/.85 var(--d);letter-spacing:-.05em;margin:0 0 22px}
+.role{font:800 clamp(1.3rem,3.2vw,2rem) var(--d);margin:0 0 14px;min-height:1.3em;transition:opacity .35s;width:fit-content;background:linear-gradient(90deg,var(--h1),var(--h2),var(--h3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(1.1rem,2.2vw,1.4rem);line-height:1.45;max-width:34em;margin:0 0 26px}
+.btn{font:700 1rem var(--d);padding:13px 24px;border-radius:999px;text-decoration:none;border:2px solid var(--ink);background:var(--card);display:inline-block;margin:0 10px 10px 0}
+.btn.p{background:var(--ink);color:var(--bg)}
+.mq{overflow:hidden;border-block:1px solid var(--line);background:var(--card);padding:14px 0;white-space:nowrap}
+.mq div{display:inline-block;animation:m 38s linear infinite;font:700 1.15rem var(--d)}
+.mq span{margin:0 26px}.mq span::after{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--h2);margin-left:52px}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:84px 0}
+h2{font:800 clamp(2rem,5vw,3.4rem)/1.02 var(--d);letter-spacing:-.035em;margin:0 0 34px;max-width:16em}
+h3{font:700 1.2rem/1.25 var(--d);margin:0 0 6px}
+.bento{display:grid;gap:16px;grid-template-columns:repeat(6,1fr)}
+.c{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 0 60px rgba(26,143,227,var(--glow))}
+.c.s2{grid-column:span 2}.c.s3{grid-column:span 3}.c.s4{grid-column:span 4}.c.s6{grid-column:span 6}
+.c p{margin:0;color:var(--mute);font-size:1.02rem}
+.big{font:800 4rem/1 var(--d);letter-spacing:-.04em;display:block}
+.grad{background:linear-gradient(135deg,var(--h1),var(--h2));color:#fff;border:0}.grad p,.grad .big{color:#fff}
+.lens svg{width:100%;height:auto;border-radius:16px;display:block;margin:14px 0}
+.heat{opacity:0;transition:opacity .6s}.on .heat{opacity:1}
+.pubs{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid var(--line)}
+.pubs li{padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:18px}
+.pubs li[hidden]{display:none}.pubs em{font:600 .85rem var(--d);color:var(--mute);white-space:nowrap;font-style:normal}
+.tag{font:600 .8rem var(--d);color:var(--accent);display:block}
+.chips{display:flex;flex-wrap:wrap;gap:9px}.chips span{font:500 .95rem var(--d);padding:7px 15px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg)}
+.tl{border-left:3px solid var(--line);padding-left:26px;margin-left:5px}
+.tl article{position:relative;margin-bottom:38px}.tl article::before{content:"";position:absolute;left:-36px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--h2);border:3px solid var(--bg)}
+.when{font:700 .92rem var(--d);color:var(--accent)}.tl ul,.c ul{margin:8px 0 0;padding-left:1.1em;color:var(--mute);font-size:1.02rem}
+.mail{font:800 clamp(1.4rem,5.4vw,3.4rem)/1.1 var(--d);letter-spacing:-.03em;text-decoration-thickness:4px;text-decoration-color:var(--h2);text-underline-offset:8px;word-break:break-all}
+footer{position:relative;margin-top:40px;padding:56px 0 28px;background:var(--card);border-top:1px solid var(--line);color:var(--mute)}
+footer::before{content:"";position:absolute;left:0;right:0;top:-1px;height:3px;background:linear-gradient(90deg,var(--h1),var(--h2),var(--h3))}
+.fg{display:grid;gap:36px;grid-template-columns:1.6fr 1fr 1fr 1.3fr}
+footer h4{font:700 .95rem var(--d);margin:0 0 12px;color:var(--ink)}
+footer ul{list-style:none;margin:0;padding:0}footer li{margin-bottom:8px}
+footer a{color:var(--mute);text-decoration:none}footer a:hover{color:var(--ink)}
+footer a.logo{color:var(--ink)}
+.fb{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:.92rem}
+@media(max-width:760px){.c.s2,.c.s3,.c.s4{grid-column:span 6}.pubs li{flex-direction:column;gap:4px}}
+@media(prefers-reduced-motion:reduce){.mq div{animation:none}}
+.logo{display:flex;gap:10px;align-items:center;margin-right:auto;font:800 1.05rem var(--d);text-decoration:none;color:var(--ink)}
+.logo span{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--h1),var(--h2));color:#fff;font-size:.95rem;letter-spacing:-.02em}
+.logo em{font-style:normal}
+nav .w>*{flex:none}
+.hl{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 6px}
+.hl a{font:600 .92rem var(--d);text-decoration:none;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:color-mix(in srgb,var(--card) 80%,transparent)}
+.hl a:hover,.pl a:hover{border-color:var(--h2)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:30px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--line)}
+.facts div{background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(8px);padding:16px 18px}
+.facts b{display:block;font:800 1.5rem/1.1 var(--d)}.facts span{color:var(--mute);font-size:.9rem}
+.pl{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:26px}
+.pl a{display:block;text-decoration:none;padding:16px 18px;border-radius:16px;border:1.5px solid var(--line);background:var(--bg)}
+.pl b{display:block;font:700 1.05rem var(--d)}.pl span{color:var(--mute);font-size:.92rem;word-break:break-all}
+.c a{text-decoration:underline;text-decoration-color:var(--h2);text-underline-offset:3px}.c .pl a,.c .mail{text-decoration:none}.c .mail{text-decoration:underline}
+@media(max-width:860px){.fg{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.facts{grid-template-columns:1fr 1fr}.hero .w{padding-top:56px;padding-bottom:32px}.btn{display:block;text-align:center;margin-right:0}section{padding:60px 0}}
+@media(max-width:520px){.fg{grid-template-columns:1fr}nav .logo em{display:none}.w{padding:0 16px}.c{padding:20px;border-radius:20px}}
+.cert{display:flex;gap:28px;align-items:center;padding:30px;border-radius:26px;border:1px solid var(--line);margin-bottom:16px;background:linear-gradient(120deg,color-mix(in srgb,var(--h1) 20%,var(--card)),color-mix(in srgb,var(--h2) 18%,var(--card)))}
+.cert[hidden]{display:none}
+.seal{flex:none;width:132px;height:132px;border-radius:50%;display:grid;place-items:center;text-align:center;font:800 .98rem/1.15 var(--d);color:#4d3200;background:radial-gradient(circle at 35% 30%,#ffeaa8,#e0a82e 60%,#a8741a);box-shadow:0 0 0 6px rgba(224,168,46,.25),0 10px 30px rgba(224,168,46,.35);transition:transform .8s}
+.cert:hover .seal{transform:rotate(360deg) scale(1.06)}
+.cert small{font:700 .82rem var(--d);letter-spacing:.09em;text-transform:uppercase;color:var(--accent)}
+.rg{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.rc{position:relative;overflow:hidden;cursor:pointer;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;transition:transform .25s,border-color .25s}
+.rc[hidden]{display:none}
+.rc::before{content:"";position:absolute;inset:0;opacity:0;transition:opacity .3s;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--h2) 30%,transparent),transparent 60%)}
+.rc:hover{transform:translateY(-4px);border-color:var(--h2)}.rc:hover::before{opacity:1}
+.rc>*{position:relative}
+.ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin-bottom:14px;color:#fff;background:linear-gradient(135deg,var(--h1),var(--h2))}
+.ic svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.rc .yr{position:absolute;top:22px;right:22px;font:700 .85rem var(--d);color:var(--accent)}
+.rc .sub{color:var(--mute);font-size:.98rem}
+.rc .more{max-height:0;overflow:hidden;transition:max-height .4s,margin .4s;color:var(--mute);font-size:1rem}
+.rc[aria-expanded=true] .more{max-height:260px;margin-top:12px}
+.rc .tg{display:block;margin-top:14px;font:600 .85rem var(--d);color:var(--accent)}
+@media(max-width:600px){.cert{flex-direction:column;text-align:center;padding:24px}}
+.rl{list-style:none;counter-reset:r;margin:0;padding:0;display:grid;gap:10px}
+.rl li{counter-increment:r;display:flex;gap:16px;align-items:center;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-radius:16px;font-size:1.05rem;transition:border-color .25s,transform .25s}
+.rl li:hover{border-color:var(--h2);transform:translateX(4px)}
+.rl li::before{content:counter(r);flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font:800 .95rem var(--d);color:#fff;background:linear-gradient(135deg,var(--h1),var(--h2))}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="logo" href="#" aria-label="Mohd Shuaib, back to top"><span>MS</span><em>Mohd Shuaib</em></a><a href="#about">About</a><a href="#recognition">Recognition</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button class="tt" id="tt" type="button" aria-label="Toggle light and dark theme">Theme</button></div></nav>
+
+<header class="hero">
+<canvas id="heat" aria-hidden="true"></canvas>
+<div class="w">
+<div class="pill"><i></i>UGC NET Qualified · Ph.D. Scholar · Assistant Professor</div>
+<h1>Mohd<br>Shuaib</h1>
+<div class="role" id="role">Explainable AI researcher</div>
+<p class="lede">I build deep learning systems that show their reasoning, across medical imaging, agriculture, security and crowd analysis.</p>
+<a class="btn p" href="#research">See my research</a><a class="btn" href="tel:+919557706428">Call +91 9557706428</a>
+<div class="hl"><a href="https://www.scopus.com/authid/detail.uri?authorId=56501838500" target="_blank" rel="noopener">Scopus</a><a href="https://scholar.google.com/citations?hl=en&amp;user=a0EkLvQAAAAJ" target="_blank" rel="noopener">Google Scholar</a><a href="https://orcid.org/0009-0009-9723-6178" target="_blank" rel="noopener">ORCID</a><a href="https://ieeexplore.ieee.org/author/722162779548937" target="_blank" rel="noopener">IEEE Xplore</a><a href="mailto:01shuaib01@gmail.com">Email</a></div>
+<div class="facts"><div><b>20+</b><span>Scopus-indexed papers</span></div><div><b>3 yrs</b><span>teaching experience</span></div><div><b>UGC NET</b><span>qualified, CS &amp; Applications</span></div><div><b>Elsevier</b><span>journal reviewer</span></div></div>
+</div>
+</header>
+
+<div class="mq" aria-hidden="true"><div><span>Deep Learning</span><span>Computer Vision</span><span>Explainable AI</span><span>Generative AI</span><span>Vision Transformers</span><span>Image Segmentation</span><span>Medical Imaging</span><span>Deep Learning</span><span>Computer Vision</span><span>Explainable AI</span><span>Generative AI</span><span>Vision Transformers</span><span>Image Segmentation</span><span>Medical Imaging</span></div></div>
+
+<section id="about"><div class="w">
+<h2>Research that explains itself, teaching that sticks.</h2>
+<div class="bento">
+<div class="c s4"><h3>Profile summary</h3><p>UGC NET-qualified academic and AI researcher with 3 years of teaching experience and a strong research record in Artificial Intelligence. Currently pursuing a Ph.D. in Computer Science &amp; Engineering, with expertise in Deep Learning, Computer Vision, Explainable AI (XAI) and Generative AI. Author of 20+ Scopus-indexed research publications, committed to combining cutting-edge AI research with quality teaching to develop innovative solutions for real-world challenges.</p></div>
+<div class="c s2 grad"><span class="big stat">20+</span><p>research publications</p></div>
+<div class="c s2"><span class="big stat">3</span><p>years of teaching</p></div>
+<div class="c s2"><span class="big stat">200+</span><p>students taught</p></div>
+<div class="c s2"><span class="big stat">8+</span><p>student conference papers mentored</p></div>
+<div class="c s3 lens" id="lens"><h3>What “explainable” looks like</h3><p>An illustration of how an attention map shows where a model looks when it detects leaf disease.</p>
+<svg viewBox="0 0 300 180" role="img" aria-label="Illustration of a leaf with disease spots and a model attention heatmap">
+<defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3f8f4a"/><stop offset="1" stop-color="#1f5d34"/></linearGradient>
+<radialGradient id="rg"><stop offset="0" stop-color="#ff3b4e" stop-opacity=".95"/><stop offset=".5" stop-color="#ffb938" stop-opacity=".6"/><stop offset="1" stop-color="#3b4cc0" stop-opacity="0"/></radialGradient></defs>
+<rect width="300" height="180" fill="#173f27"/>
+<path d="M30 92C80 20 200 14 272 90C200 166 80 164 30 92Z" fill="url(#lg)"/><path d="M30 92H272" stroke="#a8d9a0" stroke-width="2" opacity=".6"/>
+<g fill="#7a4b22"><circle cx="110" cy="70" r="9"/><circle cx="190" cy="110" r="12"/><circle cx="215" cy="64" r="6"/></g>
+<g class="heat"><circle cx="110" cy="70" r="34" fill="url(#rg)"/><circle cx="190" cy="110" r="42" fill="url(#rg)"/><circle cx="215" cy="64" r="26" fill="url(#rg)"/></g></svg>
+<button class="tt" id="lb" type="button" aria-pressed="false">Show what the model sees</button></div>
+<div class="c s3"><h3>Recognition</h3><p>An Elsevier reviewer certificate, a Teachers’ Excellence Award, UGC NET qualification and international conference reviewing roles.</p><p style="margin-top:14px"><a href="#recognition">Explore recognition →</a></p></div>
+</div></div></section>
+
+<section id="recognition" style="padding-top:0"><div class="w">
+<h2>Recognition</h2>
+<div class="chips" id="rf" style="margin-bottom:18px"></div>
+<div class="cert" data-k="Reviewing"><div class="seal" aria-hidden="true"><span>Elsevier<br>Reviewer</span></div><div><small>Certificate of Reviewing</small><h3 style="font-size:1.6rem;margin-top:4px">Intelligence-Based Medicine</h3><p style="color:var(--mute);margin:6px 0 0">Awarded for 1 review in August 2026 and presented to Mohd Shuaib by the Editors of the journal, in recognition of the review contributed.</p></div></div>
+<div class="rg" id="rg"></div>
+<h3 style="margin:44px 0 14px;font-size:1.4rem">Recognition at a glance</h3>
+<ol class="rl">
+<li>Dr. S. Radhakrishnan Teachers’ Excellence Award, 2025 (IHMS Kotdwar)</li>
+<li>UGC NET qualified, Computer Science &amp; Applications</li>
+<li>Elsevier Reviewer Recognition: Certificate of Reviewing from the editors of <i>Intelligence-Based Medicine</i> (1 review, August 2026)</li>
+<li>Reviewer, ICSCST 2026 (Saintgits College of Engineering and National Chung Cheng University, Taiwan)</li>
+<li>Reviewer, CE2CT 2026 (Graphic Era Hill University, Bhimtal)</li>
+</ol>
+</div></section>
+<section id="research" style="padding-top:0"><div class="w">
+<h2>Research</h2>
+<div class="chips" id="filters"></div>
+<ul class="pubs">
+<li><span>Pseudo-Hyperspectral Feature Enrichment for Mushroom Disease Classification Using Frozen CNN Features and Multinomial Logistic Regression</span><em>Communicated</em></li>
+<li><span>A Hybrid EfficientNetV2-Based Framework with MixUp Regularization for Explainable Coconut Leaf Disease Detection</span><em>2026</em></li>
+<li><span>An Interpretable Optimized Linear Architecture for Credit Card Fraud Detection Using Geometric Feature Expansion and Probability Calibration</span><em>2026</em></li>
+<li><span>Ensemble Deep Learning Framework for Oral Cancer Detection</span><em>2026</em></li>
+<li><span>An Explainable Transformer-Based Crowd Detection Framework Using EVA-02 for Dense Crowd Analysis</span><em>2026</em></li>
+<li><span>Attention-Enhanced DeepFake Face Detection Using Xception-CBAM with Cross-Dataset Generalization</span><em>2026</em></li>
+<li><span>An Explainable AI Deep Learning Framework for Coconut Leaf Disease Detection Using ConvNeXt-Tiny with CBAM</span><em>2026</em></li>
+</ul>
+<p style="color:var(--mute);font-size:1rem;margin-top:18px">Full list on <a href="https://scholar.google.com/citations?hl=en&amp;user=a0EkLvQAAAAJ" target="_blank" rel="noopener">Google Scholar</a>, <a href="https://www.scopus.com/authid/detail.uri?authorId=56501838500" target="_blank" rel="noopener">Scopus</a> and <a href="https://ieeexplore.ieee.org/author/722162779548937" target="_blank" rel="noopener">IEEE Xplore</a>.</p>
+</div></section>
+
+<section id="experience" style="padding-top:0"><div class="w">
+<h2>Experience</h2>
+<div class="tl">
+<article><div class="when">Sep 2025 – Present</div><h3>Assistant Professor</h3><div style="color:var(--mute)">Department of Computer Applications, Graphic Era (Deemed to be University)</div>
+<ul><li>Teach undergraduate and postgraduate courses in Computer Science, AI and Data Science.</li><li>Mentor student research that led to 8+ conference publications.</li><li>Guide AI, Machine Learning, Deep Learning and Computer Vision projects.</li><li>Contribute to curriculum development and academic coordination.</li></ul></article>
+<article><div class="when">Apr 2023 – Aug 2025</div><h3>Teaching Associate</h3><div style="color:var(--mute)">Department of Computer Applications, Graphic Era (Deemed to be University)</div>
+<ul><li>Delivered lectures and labs for 200+ undergraduate and postgraduate students.</li><li>Designed course materials, lab exercises and assessments.</li><li>Organized technical workshops, coding sessions and research-oriented learning.</li></ul></article>
+</div></div></section>
+
+<section id="education" style="padding-top:0"><div class="w">
+<h2>Education</h2>
+<div class="bento">
+<div class="c s3 grad"><h3>Ph.D., Computer Science &amp; Engineering</h3><p>Graphic Era (Deemed to be University), 2025 – Present</p></div>
+<div class="c s3"><h3>M.Tech, CSE · 8.6 / 10</h3><p>Graphic Era (Deemed to be University), 2023 – 2025</p></div>
+<div class="c s2"><h3>MCA · 8.2 / 10</h3><p>Graphic Era, 2021 – 2023</p></div>
+<div class="c s2"><h3>BCA · 7.3 / 10</h3><p>HNB Garhwal University, 2018 – 2021</p></div>
+<div class="c s2"><h3>Intermediate · 71%</h3><p>Govt. I.C. Kotdwara, 2017 – 2018</p></div>
+<div class="c s6"><h3>Certifications and FDPs</h3><ul><li>FDP: Next GEN Computing HPC, AI &amp; Quantum Technologies, G L Bajaj Group of Institutions (Feb 2026)</li><li>Certificate in Explainable AI (XAI), CampusX (Dec 2025)</li><li>FDP: Harnessing the Power of LLMs for Research, Graphic Era (2024)</li></ul></div>
+</div></div></section>
+
+<section id="skills" style="padding-top:0"><div class="w">
+<h2>Skills and teaching</h2>
+<div class="bento">
+<div class="c s3"><h3>AI / ML</h3><div class="chips"><span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Scikit-learn</span><span>OpenCV</span></div></div>
+<div class="c s3"><h3>Programming</h3><div class="chips"><span>Python</span><span>C</span><span>C++</span><span>Java</span></div></div>
+<div class="c s3"><h3>Web and data</h3><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>MySQL</span><span>MongoDB</span></div></div>
+<div class="c s3"><h3>Tools</h3><div class="chips"><span>Google Colab</span><span>VS Code</span><span>Jupyter</span><span>Git</span><span>Overleaf</span></div></div>
+<div class="c s6"><h3>Courses taught</h3><div class="chips"><span>C Programming</span><span>C++ Programming</span><span>Java Programming</span><span>.NET using C#</span><span>Machine Learning</span><span>Python Programming</span><span>Web Technologies</span></div></div>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="w">
+<div class="c s6" style="padding:44px 26px"><h2 style="margin-bottom:16px">Let’s collaborate.</h2><p style="margin-bottom:18px">Open to research collaborations, student project mentoring and reviewing.</p>
+<a class="mail" href="mailto:01shuaib01@gmail.com">01shuaib01@gmail.com</a><p style="margin-top:18px"><a href="tel:+919557706428">+91 9557706428</a> · Dehradun, Uttarakhand, India</p>
+<div class="pl"><a href="https://www.scopus.com/authid/detail.uri?authorId=56501838500" target="_blank" rel="noopener"><b>Scopus</b><span>Author ID 56501838500</span></a><a href="https://scholar.google.com/citations?hl=en&amp;user=a0EkLvQAAAAJ" target="_blank" rel="noopener"><b>Google Scholar</b><span>Citations profile</span></a><a href="https://orcid.org/0009-0009-9723-6178" target="_blank" rel="noopener"><b>ORCID</b><span>0009-0009-9723-6178</span></a><a href="https://ieeexplore.ieee.org/author/722162779548937" target="_blank" rel="noopener"><b>IEEE Xplore</b><span>Author ID 722162779548937</span></a><a href="tel:+919557706428"><b>Phone</b><span>+91 9557706428</span></a></div></div>
+</div></section>
+<footer><div class="w"><div class="fg">
+<div><a class="logo" href="#"><span>MS</span><em>Mohd Shuaib</em></a><p style="color:var(--mute);font-size:1rem;margin:14px 0 0;max-width:22em">AI researcher and Assistant Professor building explainable deep learning for real-world problems.</p></div>
+<div><h4>Explore</h4><ul><li><a href="#about">About</a></li><li><a href="#recognition">Recognition</a></li><li><a href="#research">Research</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li></ul></div>
+<div><h4>Profiles</h4><ul><li><a href="https://www.scopus.com/authid/detail.uri?authorId=56501838500" target="_blank" rel="noopener">Scopus</a></li><li><a href="https://scholar.google.com/citations?hl=en&amp;user=a0EkLvQAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li><li><a href="https://orcid.org/0009-0009-9723-6178" target="_blank" rel="noopener">ORCID</a></li><li><a href="https://ieeexplore.ieee.org/author/722162779548937" target="_blank" rel="noopener">IEEE Xplore</a></li></ul></div>
+<div><h4>Contact</h4><ul><li><a href="mailto:01shuaib01@gmail.com">01shuaib01@gmail.com</a></li><li><a href="tel:+919557706428">+91 9557706428</a></li><li style="color:var(--mute)">Dehradun, Uttarakhand, India</li></ul></div>
+</div><div class="fb"><span>© 2026 Mohd Shuaib. All rights reserved.</span><a href="#">Back to top ↑</a></div></div></footer>
+
+<script>
+(function(){
+var r=document.documentElement,q=function(s){return document.querySelectorAll(s)};
+document.getElementById('tt').onclick=function(){r.dataset.theme=r.dataset.theme==='light'?'dark':'light'};
+var lb=document.getElementById('lb'),ln=document.getElementById('lens');lb.onclick=function(){var o=ln.classList.toggle('on');lb.setAttribute('aria-pressed',o);lb.textContent=o?'Hide attention map':'Show what the model sees'};
+var R=[{k:'Awards',y:'2025',t:'Teachers’ Excellence Award',s:'Dr. S. Radhakrishnan Award · IHMS Kotdwar',d:'Received for excellence in research, academic leadership and outstanding contributions to the field of Computer Applications.',i:'M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3'},{k:'Qualification',y:'NET',t:'UGC NET Qualified',s:'Computer Science & Applications',d:'Nationally qualified for university-level teaching and research eligibility in Computer Science & Applications.',i:'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4'},{k:'Reviewing',y:'2026',t:'Reviewer, ICSCST 2026',s:'Saintgits College of Engineering × National Chung Cheng University',d:'International Conference on Smart Communication and Sustainable Technologies, jointly organised by Saintgits College of Engineering (Autonomous), India and National Chung Cheng University, Taiwan.',i:'M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 14l2 2 4-4'},{k:'Reviewing',y:'2026',t:'Reviewer, CE2CT 2026',s:'Graphic Era Hill University, Bhimtal',d:'2026 Second International Conference on Advances in Computer Science, Electrical, Electronics, and Communication Technologies, organised by Graphic Era Hill University, Bhimtal Campus.',i:'M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 14l2 2 4-4'}],rg=document.getElementById('rg'),rf=document.getElementById('rf'),cert=q('.cert')[0];
+R.forEach(function(o){var a=document.createElement('article');a.className='rc';a.dataset.k=o.k;a.tabIndex=0;a.setAttribute('role','button');a.setAttribute('aria-expanded','false');a.innerHTML='<div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="'+o.i+'"/></svg></div><span class="yr">'+o.y+'</span><h3>'+o.t+'</h3><div class="sub">'+o.s+'</div><div class="more">'+o.d+'</div><span class="tg">Tap for details</span>';
+function tg(){var e=a.getAttribute('aria-expanded')!=='true';a.setAttribute('aria-expanded',e);a.querySelector('.tg').textContent=e?'Show less':'Tap for details'}
+a.onclick=tg;a.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tg()}};
+a.onpointermove=function(e){var b=a.getBoundingClientRect();a.style.setProperty('--mx',e.clientX-b.left+'px');a.style.setProperty('--my',e.clientY-b.top+'px')};rg.appendChild(a)});
+['All','Awards','Reviewing','Qualification'].forEach(function(k){var b=document.createElement('button');b.type='button';b.textContent=k;b.setAttribute('aria-pressed',k==='All');b.onclick=function(){rf.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});q('.rc,.cert').forEach(function(c){c.hidden=!(k==='All'||c.dataset.k===k)})};rf.appendChild(b)});
+var roles=['Explainable AI researcher','Assistant Professor','Computer vision builder','Mentor of student researchers'],el=document.getElementById('role'),n=0;
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){el.style.opacity=0;setTimeout(function(){n=(n+1)%roles.length;el.textContent=roles[n];el.style.opacity=1},350)},2600);
+var map={Explainable:/explainable|interpretable/i,Medical:/oral|cancer/i,Agriculture:/coconut|mushroom/i,Security:/fraud|deepfake/i,Crowd:/crowd/i},lis=q('.pubs li'),f=document.getElementById('filters');
+lis.forEach(function(li){var t=[];for(var k in map)if(map[k].test(li.textContent))t.push(k);li.dataset.t=t.join(',');var s=document.createElement('span');s.className='tag';s.textContent=t.join(', ');li.firstElementChild.appendChild(s)});
+['All'].concat(Object.keys(map)).forEach(function(k){var b=document.createElement('button');b.type='button';b.textContent=k;b.setAttribute('aria-pressed',k==='All');b.onclick=function(){f.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});lis.forEach(function(li){li.hidden=!(k==='All'||li.dataset.t.indexOf(k)>-1)})};f.appendChild(b)});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var t=e.target,m=t.textContent.match(/(\d+)(.*)/),T=+m[1],s=0,id=setInterval(function(){s+=Math.max(1,T/30);if(s>=T){s=T;clearInterval(id)}t.textContent=Math.round(s)+m[2]},30)})},{threshold:.6});q('.stat').forEach(function(b){io.observe(b)});
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)q('nav a').forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})})},{rootMargin:'-45% 0px -50% 0px'});q('section[id]').forEach(function(s){so.observe(s)});
+var c=document.getElementById('heat'),x=c.getContext('2d'),S=32,W,H,cols,rows,vals,px=-1,py=-1,t=0,still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function css(n){return getComputedStyle(r).getPropertyValue(n).trim()}
+function hx(h){h=h.replace('#','');return[parseInt(h.substr(0,2),16),parseInt(h.substr(2,2),16),parseInt(h.substr(4,2),16)]}
+function mx(a,b,k){return[a[0]+(b[0]-a[0])*k,a[1]+(b[1]-a[1])*k,a[2]+(b[2]-a[2])*k]}
+function size(){var b=c.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);W=b.width;H=b.height;c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);cols=Math.ceil(W/S);rows=Math.ceil(H/S);vals=new Float32Array(cols*rows)}
+function draw(){t+=.012;var ax=px<0?W*(.5+.3*Math.sin(t)):px,ay=py<0?H*(.45+.25*Math.cos(t*.8)):py,A=hx(css('--h1')),B=hx(css('--h2')),C=hx(css('--h3')),dk=+css('--glow')>0;x.clearRect(0,0,W,H);
+for(var j=0;j<rows;j++)for(var i=0;i<cols;i++){var cx=i*S+S/2,cy=j*S+S/2,d=Math.hypot(cx-ax,cy-ay),g=Math.min(1,Math.exp(-d*d/(2*180*180))+.5*Math.exp(-(Math.pow(cx-W*.84,2)+Math.pow(cy-H*.28,2))/(2*110*110))),k=j*cols+i;vals[k]+=(g-vals[k])*.12;var v=vals[k],col=v<.5?mx(A,B,v*2):mx(B,C,(v-.5)*2);
+x.fillStyle='rgba('+col.map(Math.round)+','+((dk?.07:.06)+v*(dk?.85:.75))+')';x.beginPath();if(x.roundRect)x.roundRect(i*S+1.5,j*S+1.5,S-3,S-3,6);else x.rect(i*S+1.5,j*S+1.5,S-3,S-3);x.fill()}
+if(!still)requestAnimationFrame(draw)}
+var hh=c.parentElement;hh.addEventListener('pointermove',function(e){var b=c.getBoundingClientRect();px=e.clientX-b.left;py=e.clientY-b.top});hh.addEventListener('pointerleave',function(){px=py=-1});
+addEventListener('resize',function(){size();if(still)draw()});size();draw();
+})();
+</script>
+</body>
+</html>
